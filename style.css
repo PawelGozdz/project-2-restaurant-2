@@ -1,0 +1,286 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+/*------------ Body---------------*/
+body {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-family: 'Architects Daughter', cursive, sans-serif;
+}
+@keyframes 
+a:link {
+   text-decoration: none;
+}
+a {
+   color: white;
+}
+
+#wrapper {
+   display: flex;
+   flex-direction: column;
+   color: white;
+   width: 90%;
+   height: 100%;
+   margin: 40px auto 0;
+   padding: 2%;
+   background-color: rgba(0,0,0, .4);
+   background: linear-gradient(240deg, rgba(230, 27, 27, 0.1), transparent);
+   box-shadow: 14px 10px 17px rgba(0,0,0, 8),
+   -14px -10px 17px rgba(0,0,0, 8);
+   
+}
+li {
+   list-style-type:none;
+}
+
+/* ------------ Header -------------------*/
+header {
+   display: flex;  
+}
+header img {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   position: absolute;
+   top: 25%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+#nav {
+   background-color: rgba(0,0,0, .45);
+   padding-bottom: 10px;
+   
+}
+header ul {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+header ul li {
+   margin: 7px 3px;
+   border-left: 5px double white;
+   padding-left: 2px;
+   padding-top: 3px;
+   font-size: .75rem;
+}
+header ul li:hover {
+   background-color: rgba(255,255,255, .2);
+   cursor: pointer;
+}
+
+
+/* ------------ Container -------------------*/
+#container {
+   background: rgba(0,0,0, .6);
+   display: flex;
+   flex-direction: column;
+   min-height: 65vh;
+   margin: 5px 0;
+}
+.one {
+   display: flex;
+   flex-wrap: wrap;
+   height: 100%;
+}
+.one h1 {
+   display: block;
+   width: 100%;
+   text-align: center;
+   font-size: 1.5em;
+   margin: 3em 0 1em;
+   border-bottom: 1px double white;
+}
+.slider {
+   width: 100%;
+   display: flex;
+   min-height: 200px;
+   padding: 8px;
+}
+.slider p {
+   border-bottom: .25px solid white;
+   text-align: center;
+   width: 100%;
+   margin: auto;
+   font-size: 2rem;
+}
+.buttons {
+   margin-top: auto;
+   margin-bottom: 1em;
+   display: flex;
+   justify-content: center;
+   width: 100%;  
+}
+.links {
+   background: rgba(0,0,0, .7);
+   font-size: .8em;
+   margin: 0 2%;
+   border-left: 5px double white;
+   padding-left: 2px;
+}
+.links:hover {
+   background-color: rgba(255,255,255, .2);
+   cursor: pointer;
+}
+.menu-section {
+   display: flex;
+   flex-wrap: wrap;
+}
+.menu {
+   width: 100%;
+   padding-left: 8px;
+}
+.menu-title {
+   font-size: 1.15em;
+   text-transform: upercase;
+   font-weight: bold;
+   border-bottom: 1px solid white;
+   margin: 1rem 0 6px;
+}
+.price {
+   color: black;
+   background: rgba(255,255,255, .8);
+   padding: 0 2px;
+   margin-left: auto;
+   align-self: right;
+}
+
+
+.menu ul {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.menu ul li {
+   border-bottom: .25px solid white;
+   width: 100%;
+   display: flex;
+   
+}
+
+.contacts {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   height: 100%;
+   padding: 2% 8px;
+   opacity: .8;
+   justify-content: space-between;
+}
+
+.contact-div {
+   width: 100%;
+   padding: 5px 0;
+   height: 100%;
+}
+legend {
+   font-size: 1.25em;
+}
+fieldset {
+   height: 100%;
+}
+fieldset :nth-child(1n+2) {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+
+/* ------------ Footer -------------------*/
+
+footer {
+   margin-top: auto;
+   background: linear-gradient(150deg, rgba(0,0,0, .5), transparent);
+   padding-left: 8px;
+}
+
+
+
+/* ---------- Text-slider-----------------*/
+
+.text-slider {
+    animation: fading 4s infinite;
+}
+@keyframes fading {
+   0% {
+      opacity: 0
+   }
+   50% {
+      opacity: 1
+   }
+   100% {
+      opacity: 0
+   }
+}
+
+bodty {
+   animation: bg 7.5s infinite;
+}
+@keyframes bg {
+   0% {
+      opacity: .25
+   }
+   50% {
+      opacity: 1
+   }
+   100% {
+      opacity: .25
+   }
+}
+
+
+/* ----------  Media -----------------*/
+@media (min-width: 480px) and (max-width: 767px) {
+   #nav {
+      width: 100%;
+   }
+}
+@media (min-width: 480px) {
+   #wrapper {
+
+   }
+   .menu-title {
+      font-size: 1.5em;
+   }
+   .menu ul li {
+       font-size: 1.1em;  
+   }
+
+   header ul li {
+      font-size: .8em;
+   }
+   header img {
+      width: 75px;
+      height: 75px;
+      top: 27%;
+   }
+   .one h1 {
+      font-size: 2.25em;
+      margin: 3em 0 .25em;
+   }
+
+
+   .buttons {
+      font-size:  1.25em;
+   }
+   .contact-div {
+      width: 46%;
+      
+   }
+}
+
+@media (min-width: 768px) {
+   #wrapper {
+
+   }
+   header ul li {
+      font-size: 1em;
+   }
+
+}
+
+
+
