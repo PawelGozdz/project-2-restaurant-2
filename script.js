@@ -6,7 +6,7 @@ changeSlide();
 function changeSlide() {
    var textSlider = document.querySelectorAll('.text-slider');
    
-   Array.from(textSlider).forEach(function(item) {
+   textSlider.forEach(function(item) {
       item.style.display = 'none';
    });
 
